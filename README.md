@@ -4,4 +4,4 @@
 - simple design
 - score system
 
-Preview : https://www.bg-otman.github.io/rps
+Preview : https://bg-otman.github.io/rps
