@@ -1,0 +1,135 @@
+body {
+  background-image: linear-gradient(
+    to right top,
+    #008080,
+    #009791,
+    #00afa1,
+    #00c7ae,
+    #00e0b9
+  );
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+section button {
+  width: 100px;
+  height: 50px;
+  margin-right: 15px;
+  transition: 0.5s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+section button:hover {
+  background-color: midnightblue;
+  font-weight: bold;
+  color: white;
+}
+section button:hover + i {
+  color: midnightblue;
+}
+
+section button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: midnightblue;
+  transition: 0.3s;
+}
+section button:hover::before {
+  top: 90%;
+  background-color: white;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+div section div i {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.moves {
+  margin: 20px auto 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.result {
+  margin: 20px auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.score {
+  font-weight: bold;
+  color: crimson;
+  margin: 10px auto;
+}
+
+section {
+  position: relative;
+}
+
+.reset__score_confirm {
+  position: absolute;
+  top: -80px;
+  left: -10px;
+}
+.reset__score_confirm p {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  padding-right: 0;
+  width: 550px;
+}
+.reset__score_confirm .yes-btn {
+  margin-left: 10px;
+}
+.reset__score_confirm .yes-btn:hover {
+  background-color: red;
+}
+.js-no-btn {
+  margin-right: 0;
+}
+
+@media (max-width: 605px) {
+  div section {
+    flex-direction: column;
+  }
+  div section div {
+    margin-bottom: 15px;
+  }
+  div section div i {
+    margin-right: 0;
+  }
+  section button {
+    margin-right: 0;
+  }
+}
